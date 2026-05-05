@@ -3,7 +3,7 @@ const resultsEl = document.getElementById('results');
 const downloadBtn = document.getElementById('download-json');
 
 // Cambia esta URL por la de tu backend en Render
-const API_BASE = 'https://tu-backend.onrender.com';
+const API_BASE = 'https://osint-tech-github-io.onrender.com';
 
 let lastResult = null;
 
