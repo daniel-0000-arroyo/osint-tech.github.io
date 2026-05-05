@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>OSINT Legal Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>OSINT Legal & Ético</h1>
+
+  <form id="osint-form">
+    <label>
+      Tipo de objetivo:
+      <select name="type">
+        <option value="username">Username</option>
+        <option value="email">Email</option>
+        <option value="domain">Dominio</option>
+      </select>
+    </label>
+
+    <label>
+      Valor:
+      <input type="text" name="value" required />
+    </label>
+
+    <button type="submit">Lanzar OSINT</button>
+  </form>
+
+  <h2>Resultado</h2>
+  <pre id="results"></pre>
+
+  <button id="download-json" style="display:none;">Descargar JSON</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
